@@ -1,0 +1,189 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <RootNamespace>ListViewApplication</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Platforms>x86;x64;ARM64</Platforms>
+    <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
+    <PublishProfile>win10-$(Platform).pubxml</PublishProfile>
+    <UseWinUI>true</UseWinUI>
+    <EnableMsixTooling>true</EnableMsixTooling>
+    <GenerateAppInstallerFile>True</GenerateAppInstallerFile>
+    <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
+    <PackageCertificateKeyFile>ListViewApplication_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
+    <GenerateTestArtifacts>True</GenerateTestArtifacts>
+    <AppxBundle>Never</AppxBundle>
+    <AppInstallerUri>https://suryakaran.listvew.application</AppInstallerUri>
+    <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="CountryDetailsControl.xaml" />
+    <None Remove="Images\Australia.jpg" />
+    <None Remove="Images\Belgium.jpg" />
+    <None Remove="Images\Canada.jpg" />
+    <None Remove="Images\Costa Rica.jpg" />
+    <None Remove="Images\Czech Republic.jpg" />
+    <None Remove="Images\Denmark.jpg" />
+    <None Remove="Images\Finland.jpg" />
+    <None Remove="Images\Germany.jpg" />
+    <None Remove="Images\Iceland.jpg" />
+    <None Remove="Images\Israel.jpg" />
+    <None Remove="Images\Italy.jpg" />
+    <None Remove="Images\Luxembourg.jpg" />
+    <None Remove="Images\Netherlands.jpg" />
+    <None Remove="Images\New Zealand.jpg" />
+    <None Remove="Images\Norway.jpg" />
+    <None Remove="Images\Romania.jpg" />
+    <None Remove="Images\Slovenia.jpg" />
+    <None Remove="Images\Sweden.jpg" />
+    <None Remove="Images\Switzerland.jpg" />
+    <None Remove="Images\Taiwan.jpg" />
+    <None Remove="Images\United Arab Emirates.jpg" />
+    <None Remove="Images\United Kingdom.jpg" />
+    <None Remove="Images\United States.jpg" />
+    <None Remove="Images\Zoho.png" />
+    <None Remove="MainPage.xaml" />
+    <None Remove="Resources\HappinessDataCSV1.csv" />
+    <None Remove="TabletNewPage.xaml" />
+    <None Remove="temp\Brazil.jpg" />
+    <None Remove="temp\Chile.jpg" />
+    <None Remove="temp\Croatia.jpg" />
+    <None Remove="temp\Cyprus.jpg" />
+    <None Remove="temp\El Salvador.jpg" />
+    <None Remove="temp\Estonia.jpg" />
+    <None Remove="temp\Hungary.jpg" />
+    <None Remove="temp\Kazakhstan.jpg" />
+    <None Remove="temp\Kuwait.jpg" />
+    <None Remove="temp\Latvia.jpg" />
+    <None Remove="temp\Lithuania.jpg" />
+    <None Remove="temp\Malta.jpg" />
+    <None Remove="temp\Mauritius.jpg" />
+    <None Remove="temp\Mexico.jpg" />
+    <None Remove="temp\Nicaragua.jpg" />
+    <None Remove="temp\Panama.jpg" />
+    <None Remove="temp\Poland.jpg" />
+    <None Remove="temp\Qatar.jpg" />
+    <None Remove="temp\Saudi Arabia.jpg" />
+    <None Remove="temp\Serbia.jpg" />
+    <None Remove="temp\Singapore.jpg" />
+    <None Remove="temp\Slovakia.jpg" />
+    <None Remove="temp\Spain.jpg" />
+    <None Remove="temp\Taiwan.jpg" />
+    <None Remove="temp\Uruguay.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Chile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\New Zealand.jpg" />
+    <Content Include="Images\Taiwan.jpg" />
+    <Content Include="Images\United Kingdom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Romania.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Images\Australia.jpg" />
+    <Content Include="Images\Belgium.jpg" />
+    <Content Include="Images\Canada.jpg" />
+    <Content Include="Images\Costa Rica.jpg" />
+    <Content Include="Images\Czech Republic.jpg" />
+    <Content Include="Images\Denmark.jpg" />
+    <Content Include="Images\Finland.jpg" />
+    <Content Include="Images\Germany.jpg" />
+    <Content Include="Images\Iceland.jpg" />
+    <Content Include="Images\Israel.jpg" />
+    <Content Include="Images\Italy.jpg" />
+    <Content Include="Images\Luxembourg.jpg" />
+    <Content Include="Images\Netherlands.jpg" />
+    <Content Include="Images\Norway.jpg" />
+    <Content Include="Images\Slovenia.jpg" />
+    <Content Include="Images\Sweden.jpg" />
+    <Content Include="Images\Switzerland.jpg" />
+    <Content Include="Images\United Arab Emirates.jpg" />
+    <Content Include="Images\United States.jpg" />
+    <Content Include="Images\Brazil.jpg" />
+    <Content Include="Images\Cyprus.jpg" />
+    <Content Include="Images\Estonia.jpg" />
+    <Content Include="Images\Kazakhstan.jpg" />
+    <Content Include="Images\Latvia.jpg" />
+    <Content Include="Images\Lithuania.jpg" />
+    <Content Include="Images\Malta.jpg" />
+    <Content Include="Images\Panama.jpg" />
+    <Content Include="Images\Qatar.jpg" />
+    <Content Include="Images\Saudi Arabia.jpg" />
+    <Content Include="Images\Singapore.jpg" />
+    <Content Include="Images\Slovakia.jpg" />
+    <Content Include="Images\Spain.jpg" />
+    <Content Include="Images\Croatia.jpg" />
+    <Content Include="Images\El Salvador.jpg" />
+    <Content Include="Images\Hungary.jpg" />
+    <Content Include="Images\Kuwait.jpg" />
+    <Content Include="Images\Mauritius.jpg" />
+    <Content Include="Images\Mexico.jpg" />
+    <Content Include="Images\Nicaragua.jpg" />
+    <Content Include="Images\Poland.jpg" />
+    <Content Include="Images\Serbia.jpg" />
+    <Content Include="Images\Uruguay.jpg" />
+    <Content Include="Images\Zoho.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\HappinessDataCSV1.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.231202003-experimental1" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.25936-preview" />
+    <Manifest Include="$(ApplicationManifest)" />
+  </ItemGroup>
+
+  <!-- 
+    Defining the "Msix" ProjectCapability here allows the Single-project MSIX Packaging
+    Tools extension to be activated for this project even if the Windows App SDK Nuget
+    package has not yet been restored.
+  -->
+  <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
+    <ProjectCapability Include="Msix" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="CountryDetailsControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="temp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="TabletNewPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <!-- 
+    Defining the "HasPackageAndPublishMenuAddedByProject" property here allows the Solution 
+    Explorer "Package and Publish" context menu entry to be enabled for this project even if 
+    the Windows App SDK Nuget package has not yet been restored.
+  -->
+  <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
+    <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
+  </PropertyGroup>
+</Project>

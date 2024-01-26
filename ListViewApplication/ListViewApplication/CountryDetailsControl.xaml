@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="ListViewApplication.CountryDetailsControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ListViewApplication"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Vertical" >
+        <TextBlock x:Name="header"  FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" TextDecorations="Underline" ></TextBlock>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="7*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid Margin="10,20,0,0" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="6*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="0"  Text="Name" FontSize="16" HorizontalAlignment="Left" Margin="10"></TextBlock>
+                <TextBlock Grid.Row="0" Grid.Column="1" Text=":" FontSize="16" HorizontalAlignment="Center"></TextBlock>
+                <TextBlock Grid.Row="0" Grid.Column="2" x:Name="countryName" FontSize="16" HorizontalAlignment="Left"></TextBlock>
+
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="Rank" FontSize="16" HorizontalAlignment="Left" Margin="10"></TextBlock>
+                <TextBlock Grid.Row="1" Grid.Column="1" Text=":" FontSize="16" HorizontalAlignment="Center"></TextBlock>
+                <TextBlock Grid.Row="1" Grid.Column="2" x:Name="countryRank" FontSize="16" HorizontalAlignment="Left"></TextBlock>
+
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="Region" FontSize="16" HorizontalAlignment="Left" Margin="10"></TextBlock>
+                <TextBlock Grid.Row="2" Grid.Column="1" Text=":" FontSize="16" HorizontalAlignment="Center"></TextBlock>
+                <TextBlock Grid.Row="2" Grid.Column="2" x:Name="countryRegion" FontSize="16" HorizontalAlignment="Left"></TextBlock>
+
+                <TextBlock Grid.Row="3" Grid.Column="0" Text="Happiness Score" FontSize="16" HorizontalAlignment="Left" Margin="10"></TextBlock>
+                <TextBlock Grid.Row="3" Grid.Column="1" Text=":" FontSize="16" HorizontalAlignment="Center"></TextBlock>
+                <TextBlock Grid.Row="3" Grid.Column="2" x:Name="happinessScore" FontSize="16" HorizontalAlignment="Left"></TextBlock>
+
+                <TextBlock Grid.Row="4" Grid.Column="0" Text="Adult Population" FontSize="16" HorizontalAlignment="Left" Margin="10"></TextBlock>
+                <TextBlock Grid.Row="4" Grid.Column="1" Text=":" FontSize="16" HorizontalAlignment="Center"></TextBlock>
+                <TextBlock Grid.Row="4" Grid.Column="2" x:Name="adultsPopulation" FontSize="16" HorizontalAlignment="Left"></TextBlock>
+
+                <TextBlock Grid.Row="5" Grid.Column="0" Text="Median Wealth Per Adult" FontSize="16" HorizontalAlignment="Left" Margin="10"></TextBlock>
+                <TextBlock Grid.Row="5" Grid.Column="1" Text=":" FontSize="16" HorizontalAlignment="Center"></TextBlock>
+                <TextBlock Grid.Row="5" Grid.Column="2" x:Name="medianWealth" FontSize="16" HorizontalAlignment="Left"></TextBlock>
+            </Grid>
+            <ImageIcon x:Name="imageLoader" Grid.Column="1"   HorizontalAlignment="Left" Height="200" Width="200"></ImageIcon>
+        </Grid>
+    </StackPanel>
+</UserControl>

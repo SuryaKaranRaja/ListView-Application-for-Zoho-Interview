@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "ListViewApplication (Package)": {
+      "commandName": "MsixPackage",
+      "remoteDebugEnabled": false
+    },
+    "ListViewApplication (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
